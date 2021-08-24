@@ -1,0 +1,28 @@
+INTRO
+
+Our Mini Project is online attendance register using face recognition
+
+Before getting into execution,me and my teammate member would like to give a brief overview of this project.
+
+This project is mainly developed for recording the attendance of the students during online classes.This is completely an automated process in which the model checks for the student 
+wether he/she is present infront of the webcam.The student must be present for every minute throughout the meeting inorder to get the attendance i,e if a meeting is of 60mins of duration
+then the student must be present for 60 times which is once in a minute then the student will be awarded with attendance.
+
+
+Now coming to the software requirements of this project
+
+1.This project mainly works on python packages as face recorgnition,opneCv,numpy,pandas and datetime.
+2.Face recognition package helps in recognizing the face of the student using the value of methods such as face locations,and face encodings
+3.OpenCv is used to access the webcamera and record the images of the person.
+4.Numpy and pandas are used to store and filter the data based on time constraints.
+
+Coding Part
+----------------------------------------------
+
+1.At line no 9 mark attendance function is defined to store the name and time of the student in an csv file
+2.From line no.18 we are loading the path of image files from the data set and storing their face encodings values
+3.At line no 52 the process of face recognition starts in which the camera recognizes the face of the student using the values of face encodings and face locations comparing it with the
+images in the data set and match their faces with respective student.The name of the recognized student along with time will be stored.
+4.When the meeting is ended the data from the csv file is filtered based on time and is compared with the duration of the meeting.
+5.If the number of times a student is present is equal to the duration of the meeting then that student is marked as present.
+
